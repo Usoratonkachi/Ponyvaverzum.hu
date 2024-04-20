@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('hatterb.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+h1#focim{
+    color: rgb(10, 10, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 1%;
+    font-size: 5em;
+    width: 100%;
+}
+div {
+    width: auto; 
+    margin: 0;
+    background-color:rgba(255, 255, 255, 0.5);
+    padding-bottom: 0;
+    }
+
+#menu1 {       
+  float: left;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 100px;
+  text-align: center;
+  display: flex; 
+  justify-content: space-around;
+  font: 1em arial;
+    }
+#menu1 li {
+        width:auto;
+        display:inline-block;
+        text-align: center;
+        margin: 0;
+        padding:0;
+}
+
+#menu1 a {   
+  display: block;
+  padding: 0.25em 1em;
+  margin: 0;
+  color: rgb(6, 80, 109);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1em;
+    }
+
+#primary_nav_wrap
+{
+  width:auto;  
+  margin-top:30px;
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+#primary_nav_wrap ul
+{
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0px;
+  padding:0;
+}
+
+#primary_nav_wrap ul a
+{
+  display:block;
+  color:#333;
+  text-decoration:none;
+  font-weight: normal;
+  font-size:  40px;
+  line-height: 10px;
+  padding:0px auto;
+}
+
+#primary_nav_wrap ul li
+{
+  position:relative;
+  float:left;
+  margin: 10px;;
+  padding: 10px;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+  background:rgba(255, 255, 255, 0.5);
+}
+
+#primary_nav_wrap ul li:hover \\kattintási szín\\
+{
+  background:rgba(255, 255, 255, 0.5);
+}
+
+#primary_nav_wrap ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:rgba(255, 255, 255, 0.5);
+  padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+  float:none;
+  width:auto;
+}
+
+#primary_nav_wrap ul ul a
+{
+  line-height:120%;
+  padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+  top:0px;;
+  left:100%;
+  width:auto;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+  display:block
+}
