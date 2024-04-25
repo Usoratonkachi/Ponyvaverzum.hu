@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ponyvaverzum</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+      <header>   
+        <img src="logoka.jpg" alt="borito" id="logo">
+      </header> 
+        <div id="content"></div>
+        <div id="primary_nav_wrap">
+        <nav> 
+        <ul id="menu1">
+                <li><a href="index.html"><strong>Főoldal</strong></a></li> 
+                <li><a href="cikkek.html"><strong>Könyvek</strong></a>
+                     <ul>
+                            <li><a href="cikkek.html">Dráma</a></li>
+                            <li><a href="cikkek.html">Kaland</a></li>   
+                            <li><a href="cikkek.html">Horror</a></li>
+                            <li><a href="cikkek.html">Krimi</a></li>
+                            <li><a href="cikkek.html">Költészet</a></li>
+                            <li><a href="cikkek.html">Sci-fi</a></li>
+                            <li><a href="cikkek.html">Ifjúsági irodalom</a></li>
+                        </ul>
+                </li>        
+                <li><a href="akciok"><strong>Akciók</strong></a></li>
+                <li><a href="velemenyek.html"><strong>Vélemények</strong></a>
+                     <ul>
+                            <li><a href="#">Kommentek</a></li>
+                            <li><a href="#">Összefoglalók</a></li>
+                     </ul>
+                </li>
+                <li><a href="kapcsolat.html"><strong>Kapcsolat</strong></a></li>
+                
+        </ul>
+        </nav>
+        </div>    
+        <div class="user-controls">
+        <a href="bejelentkezes.php">Bejelentkezés</a> /
+        <a href="regisztracio.php">Regisztráció</a>
+    </div>
+      </body>
+<body>
+ <div id="regiszt"> 
+<h1 id="regisztral">Regisztráció:</h1>
+<form action="feldolgoz.php" method="post">
+<label>E-mail:</label><input type="email" name="email" required><br>
+<label>Név:</label><input type="text" name="nev" pattern="[A-Z,a-z, ]{8}[A-Z,a-z, ]*" required><br>
+<label>Jelszó:</label><input type="password" name="jelszo" pattern=".{6,12}" required><br>
+<label>Megye:</label>
+<select name="Megye">
+<option value="1">Bács-Kiskun vármegye</option>
+<option value="2">Baranya vármegye</option>
+<option value="3">Békés vármegye</option>
+<option value="4">Borsod-Abaúj-Zemplén vármegye</option>
+<option value="4">Csongrád-Csanád vármegye</option>
+<option value="4">Fejér vármegye</option>
+<option value="4">Győr-Moson-Sopron vármegye</option>
+<option value="4">Hajdú-Bihar vármegye</option>
+<option value="4">Heves vármegye</option>
+<option value="4">Jász-Nagykun-Szolnok vármegye</option>
+<option value="4">Komárom-Esztergom vármegye</option>
+<option value="4">Nógrád vármegye</option>
+<option value="4">Pest vármegye</option>
+<option value="4">Somogy vármegye</option>
+<option value="4">Szabolcs-Szatmár-Bereg vármegye</option>
+<option value="4">Tolna vármegye</option>
+<option value="4">Vas vármegye</option>
+<option value="4">Veszprém vármegye</option>
+<option value="4">Zala vármegye</option>
+</select><br>
+<label>Kor:</label><input type="number" name="kor" min="10" max="120" required>
+<h3>Nem:</h3>
+<label>Férfi</label><input type="radio" name="nem" value="1"><br/>
+<label>Nő</label><input type="radio" name="nem" value="1"><br/>
+<p></p>
+<h3>Megjegyzés:</h3>
+<textarea name="megjegyzes" rows="4" cols="50"></textarea>
+<p></p>
+<label></label><input type="submit" value="Küldés">
+</div>  
+</form>
+</body>
+</html>
