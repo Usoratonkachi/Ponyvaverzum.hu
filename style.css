@@ -1,21 +1,12 @@
-/* Idézet formázása */
-#fooldalIdézet {
-  font-style: italic;
-  text-align: center;
-  font-size: 200%; /* Példaként 200%-os méret */
-}
-
 /* Videó forrásának mérete */
-video source {
-  width: 200%; /* Példaként 200%-os méret */
+.idezetvideo {
+  font-size: 200%;
+  font-style: italic;
+  width: 200%; 
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
 }
-
-/* Konyvek oldal tartalma elrendezése */
-.konyvek .ajax-container, .konyvek .gallery-container {
-  display: flex;
-  flex-direction: row;
-}
-
 /* Beágyazott videó középre igazítása */
 .velemenyek iframe {
   display: block;
@@ -24,7 +15,7 @@ video source {
 
 /* Footer formázása */
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -44,5 +35,33 @@ video source {
 }
 div.container{
   padding: 40px;
-  
+  text-align: center;
+}
+.informaciosdiv{
+  width: 400px;
+  height: auto;
+}
+.kepekkonyv{
+  padding: 40px;
+}
+.informaciosdiv .szelekt{
+  display: inline;
+}
+#container{
+  padding: 10px;
+}
+.header-kep {
+  background-color: #333; /* Háttérszín beállítása */
+  color: white; /* Szövegszín beállítása */
+  height: 80px; /* Változtathatod a fejléc magasságát itt */
+  display: flex; /* Rugalmas elrendezés beállítása */
+  justify-content: center; /* Tartalom középre igazítása */
+  align-items: center; /* Elemek középre igazítása a tengelyen */
+}
+
+.header-text {
+  font-size: 30px;
+}
+.fejlec{
+  background-image: url("images/vilagur.jpg");
 }
