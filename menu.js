@@ -1,4 +1,4 @@
-var navWrap = document.getElementById("primary_nav_wrap");
+const navWrap = document.getElementById("primary_nav_wrap");
 var navItems = navWrap.querySelectorAll("#menu1 > li");
 
 navItems.forEach(function(navItem) {
@@ -17,7 +17,7 @@ navItems.forEach(function(navItem) {
     });
 });
 window.onload = function() {
-    var h1Height = document.getElementById("focim").offsetHeight;
-    var divPaddingBottom = h1Height + 10px;
+    var h1Height = document.getElementById("menu1").offsetHeight;
+    var divPaddingBottom = h1Height + "px";
     document.getElementById("content").style.paddingBottom = divPaddingBottom + "px";
 };
