@@ -18,10 +18,14 @@
     <script src="js/menu.js" defer></script>
 </head>
 <body>
+    <header id=fejlec>
 <div class="jumbotron text-center" style="margin-bottom:0">
+    <div class="header-text">
     <h1>Ponyvaverzum</h1>
     <p>Kalandra fel, itt minden oldal új életre kel!</p> 
   </div>
+</div>
+  </header>
 <header>
     <?php if(isset($_SESSION['login'])) { ?>
         Bejlentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong>
